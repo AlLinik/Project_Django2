@@ -19,6 +19,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.about),
-    path('home/', views.home),
+    path('', views.home),
+    path('about/', views.about),
+    path('reverse/', views.reverse, name='reversed'),
+
 ]
